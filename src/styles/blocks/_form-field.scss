@@ -1,0 +1,19 @@
+@use '../global' as v;
+.form-field { min-width: 0; }
+.form-field__label { display: block; min-height: 30px; padding-bottom: 8px; font-size: 14px; line-height: 22px; }
+.form-field__required { margin-right: 4px; color: v.$error; }
+.form-field__input, .form-field__textarea { display: block; width: 100%; border: 1px solid v.$border; border-radius: 2px; background: v.$white; color: v.$text; font-size: 14px; line-height: 22px; padding: 4px 11px; min-width: 0; }
+.form-field__input { height: 32px; }
+.form-field__textarea { min-height: 98px; resize: vertical; padding-top: 7px; }
+.form-field__input::placeholder, .form-field__textarea::placeholder { color: #bfbfbf; opacity: 1; }
+.form-field__input:focus, .form-field__textarea:focus { outline: none; box-shadow: none; border: 2px solid #945d00; }
+.form-field__input:focus { padding: 3px 10px; }
+.form-field__textarea:focus { padding: 6px 10px 3px; }
+.form-field__input:disabled, .form-field__textarea:disabled { background: v.$background; }
+.form-field--error .form-field__input, .form-field--error .form-field__textarea { border-color: v.$error; }
+.form-field__error { color: v.$error; font-size: 14px; line-height: 22px; padding-top: 2px; overflow-wrap: anywhere; }
+.form-field__hint { font-size: 14px; color: v.$muted; }
+.form-field__underneath { min-height: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; }
+.form-field__count { margin-left: auto; font-size: 14px; line-height: 24px; color: #bfbfbf; margin-bottom: 10px; }
+@include v.mobile { .form-field__input { height: 42px; } }
+

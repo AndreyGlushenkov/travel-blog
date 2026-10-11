@@ -1,0 +1,26 @@
+# Dependencies and generated output
+node_modules/
+/dist/
+/.npm-cache/
+*.log
+
+# Local environment; keep the public configuration example
+.env
+.env.*
+!.env.example
+
+# Local design research and review artifacts
+/design-analysis/
+
+# Editor, OS and local tooling files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+/.codex/
+/.agents/
+/.aws/

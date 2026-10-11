@@ -1,0 +1,6 @@
+@use '../global' as v;
+.home__actions { margin-top: 60px; text-align: center; }
+.home__actions .button { min-width: 294px; }
+.home__notice { padding: 16px; margin-bottom: 24px; border: 1px solid v.$border; border-radius: v.$radius; }
+@include v.mobile { .home__actions { margin-top: 30px; } .home__actions .button { min-width: 0; width: 100%; } }
+

@@ -1,0 +1,7 @@
+@use '../global' as v;
+.comment-card { padding: 24px 25px; border-radius: v.$radius; border: 1px solid v.$panel-border; background: v.$white; box-shadow: v.$shadow; overflow-wrap: anywhere; }
+.comment-card__name { font-size: 16px; line-height: 24px; font-weight: 500; }
+.comment-card__date { display: block; font-size: 14px; line-height: 21px; margin-top: 3px; color: v.$muted; }
+.comment-card__text { font-size: 16px; line-height: 24px; margin-top: 15px; white-space: pre-wrap; }
+@include v.mobile { .comment-card { padding: 20px; } .comment-card__text { font-size: 16px; line-height: 26px; } }
+

@@ -1,0 +1,6 @@
+@use '../global' as v;
+.status { max-width: v.$panel; margin: 0 auto; min-height: 240px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 30px; text-align: center; overflow-wrap: anywhere; }
+.status__title { max-width: 695px; }
+.status--error .status__title { color: #a52b2d; }
+.status__loader { width: 32px; height: 32px; border: 4px solid v.$border; border-top-color: v.$accent; border-radius: 50%; }
+

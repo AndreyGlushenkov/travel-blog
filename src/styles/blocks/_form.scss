@@ -1,0 +1,15 @@
+@use '../global' as v;
+.form { display: flex; flex-direction: column; gap: 30px; min-width: 0; }
+.form__row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+.form__column { min-width: 0; }
+.form__actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap; }
+.form__actions--spaced { justify-content: space-between; }
+.form__comment-end { display: flex; flex-direction: column; gap: 0; }
+.form__comment-end .form-field__underneath { min-height: 20px; }
+.form__comment-end .form-field__count { line-height: 20px; }
+.form__message { padding: 12px 16px; border: 1px solid currentColor; border-radius: v.$radius; overflow-wrap: anywhere; }
+.form__message--error { color: #a52b2d; background: #fff7f7; }
+.form__message--success { color: #315d35; background: #f5fbf5; }
+.form__legend { font-size: 20px; line-height: 30px; font-weight: 500; padding: 0; margin-bottom: 20px; }
+@include v.mobile { .form { gap: 24px; } .form__row { grid-template-columns: minmax(0,1fr); gap: 24px; } .form__actions { gap: 12px; } .form__actions .button { flex: 1 1 180px; } }
+

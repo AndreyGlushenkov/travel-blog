@@ -1,0 +1,36 @@
+@use '../global' as v;
+.header { height: 251px; color: v.$white; background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../../assets/images/hero-kyoto.jpg'); background-size: 114.2% auto; background-position: center 41.6%; }
+.header--home { height: 422px; background-position: center 49.1%; }
+.header__container { max-width: v.$panel; height: 100%; }
+.header__navigation { height: 101px; border-bottom: 1px solid rgba(255,255,255,.6); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.header__logo { display: block; flex-shrink: 0; }
+.header__logo .icon { width: 181.5714px; height: 41px; }
+.header__login { font-size: 16px; font-weight: 400; }
+.header__login:hover { color: v.$accent; }
+.header__title { text-align: center; text-transform: uppercase; font-size: 48px; line-height: 72px; font-weight: 700; margin-top: 37px; }
+.header--home .header__title { margin-top: 107px; }
+.header__account { position: relative; max-width: 50%; }
+.header__toggle { display: flex; align-items: center; gap: 10px; background: none; border: 0; padding: 0; color: v.$white; min-height: 44px; }
+.header__avatar { width: 30px; height: 30px; border-radius: 50%; background: v.$accent; color: v.$text; display: grid; place-items: center; flex-shrink: 0; font-weight: 600; }
+.header__name { min-width: 0; font-size: 16px; font-weight: 400; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.header__chevron { width: 14px; height: 11px; }
+.header__menu { position: absolute; right: 0; top: calc(100% - 10px); min-width: 70px; z-index: 5; background: v.$white; color: v.$text; border-radius: 2px; box-shadow: v.$shadow; padding: 8px; }
+.header__menu a, .header__menu button { display: block; width: 100%; text-align: left; padding: 0; background: none; border: 0; font-size: 14px; line-height: 22px; }
+.header__menu button { margin-top: 4px; }
+.header__menu a:hover, .header__menu button:hover { background: v.$background; color: #945d00; }
+@media (max-width: 1220px) { .header { padding-inline: 24px; background-size: cover; } .header__title { font-size: clamp(30px, 3.4vw, 48px); } }
+@include v.mobile {
+  .header { height: 220px; padding-inline: 16px; }
+  .header--home { height: 300px; }
+  .header__navigation { height: 85px; }
+  .header__logo .icon { width: 155px; height: 35px; }
+  .header__title { margin-top: 28px; font-size: 26px; line-height: 1.4; }
+  .header--home .header__title { margin-top: 57px; }
+  .header__name { display: none; }
+  .header__toggle { gap: 8px; }
+  .header__avatar { width: 40px; height: 40px; }
+  .header__login { font-size: 16px; }
+  .header__menu { top: calc(100% + 8px); min-width: 140px; }
+  .header__menu a, .header__menu button { padding: 8px; }
+}
+

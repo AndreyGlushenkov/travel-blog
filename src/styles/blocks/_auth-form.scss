@@ -1,0 +1,5 @@
+.auth-form--register .form__actions { justify-content: flex-start; }
+.auth-form__register-button.button { width: 234px; min-width: 0; height: 51px; flex: 0 0 234px; padding-inline: 28px; }
+.auth-form__login-button.button { width: 113px; min-width: 0; height: 51px; flex: 0 0 113px; padding-inline: 10px; margin-left: auto; }
+.auth-form__login-button[aria-busy='true'] { font-size: 14px; }
+

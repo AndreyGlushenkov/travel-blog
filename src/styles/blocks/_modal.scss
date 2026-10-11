@@ -1,0 +1,9 @@
+@use '../global' as v;
+.modal { width: calc(100% - 32px); max-width: 695px; min-height: 141px; border: 0; border-radius: 20px; padding: 36px 46px; margin: 282px auto auto; color: v.$text; background: v.$white; box-shadow: 0 12px 43px -2px rgba(0,0,0,.08); }
+.modal::backdrop { background: rgba(0,0,0,.5); }
+.modal__close { position: absolute; top: 9px; right: 9px; background: none; border: 0; padding: 0; }
+.modal__close .icon { width: 21.2484px; height: 24px; }
+.modal__message { font-size: 24px; line-height: 36px; font-weight: 600; text-align: center; overflow-wrap: anywhere; }
+@media (max-height: 560px) { .modal { margin-top: 15vh; } }
+@include v.mobile { .modal { margin-top: 24vh; padding: 40px 24px 30px; } .modal__message { font-size: 20px; line-height: 30px; } }
+

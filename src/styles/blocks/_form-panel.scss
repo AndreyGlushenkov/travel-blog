@@ -1,0 +1,7 @@
+@use '../global' as v;
+.form-panel { @include v.panel; max-width: v.$panel; min-height: 739px; margin-inline: auto; padding: 27px 30px 40px; }
+.form-panel__content { max-width: 695px; margin-inline: auto; }
+.form-panel__title { font-size: 36px; line-height: 54px; font-weight: 600; text-align: center; margin-bottom: 20px; overflow-wrap: anywhere; }
+@include v.mobile { .form-panel { padding: 24px 20px 30px; min-height: 600px; } .form-panel__title { font-size: 26px; line-height: 1.4; margin-bottom: 24px; } }
+.form-panel--create-post .form-panel__title { margin-bottom: 25px; }
+

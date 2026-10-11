@@ -1,0 +1,4 @@
+@use '../global' as v;
+.media { object-fit: cover; width: 100%; }
+.media--unavailable { display: grid; place-items: center; padding: 24px; color: v.$muted; background: #eee; text-align: center; }
+

@@ -1,0 +1,5 @@
+@use 'variables' as v;
+@mixin panel { background: v.$white; border: 1px solid v.$panel-border; border-radius: v.$radius; }
+@mixin mobile { @media (max-width: 640px) { @content; } }
+@mixin tablet { @media (max-width: 1000px) { @content; } }
+

@@ -1,0 +1,13 @@
+@use '../global' as v;
+.post-card { min-width: 0; height: 552px; border-radius: v.$radius; background: v.$white; box-shadow: v.$shadow; overflow: hidden; }
+.post-card__image-link { display: block; }
+.post-card__image { height: 288px; }
+.post-card__content { padding: 25px; height: 264px; display: flex; flex-direction: column; gap: 15px; }
+.post-card__title { font-size: 18px; line-height: 27px; font-weight: 600; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; }
+.post-card__title a:hover { color: #945d00; }
+.post-card__description { font-size: 15px; line-height: 22.5px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; overflow-wrap: anywhere; }
+.post-card__bottom { display: flex; flex-direction: column; gap: 15px; margin-top: auto; }
+.post-card__location { font-size: 14px; line-height: 21px; font-weight: 500; color: v.$muted; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.post-card__link { font-size: 14px; line-height: 21px; color: v.$accent; font-weight: 500; align-self: flex-start; }
+.post-card__link:hover { text-decoration: underline; }
+

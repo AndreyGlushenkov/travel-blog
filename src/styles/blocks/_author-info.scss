@@ -1,0 +1,6 @@
+@use '../global' as v;
+.author-info { margin-top: 30px; padding-top: 24px; border-top: 1px solid v.$panel-border; overflow-wrap: anywhere; }
+.author-info__name { font-size: 20px; line-height: 30px; font-weight: 500; }
+.author-info__city { margin-top: 5px; color: v.$muted; }
+.author-info__bio { margin-top: 15px; white-space: pre-wrap; }
+
